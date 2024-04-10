@@ -1,4 +1,5 @@
-public class Wetterstation {
+package LabClass1;
+public class oldWetterstation {
     public double temperatur;
     public double windgeschwindigkeit;
 
