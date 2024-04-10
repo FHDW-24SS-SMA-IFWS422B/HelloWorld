@@ -1,5 +1,6 @@
+```mermaid
 flowchart TD
     A[Wetterstation] -->|sammelt Daten von| C{Treibern}
     C -->|des| D[TemperatureSerialDriver]
     C -->|des| E[WindspeedSerialDriver]
-    
+```
