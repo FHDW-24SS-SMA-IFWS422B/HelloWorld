@@ -2,7 +2,6 @@ package fhdw.drivers.sensors;
 
 import obj.wetterstation.interfaces.IUSB;
 
-import java.sql.Driver;
 import java.util.Random;
 
 public class USBTemperatureDriver implements IUSB {

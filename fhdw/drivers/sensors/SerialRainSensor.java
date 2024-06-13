@@ -1,9 +1,7 @@
 package fhdw.drivers.sensors;
 
 import obj.wetterstation.interfaces.IRain;
-import obj.wetterstation.interfaces.ITemp;
 
-import java.io.FileNotFoundException;
 import java.util.Random;
 
 public class SerialRainSensor implements IRain {

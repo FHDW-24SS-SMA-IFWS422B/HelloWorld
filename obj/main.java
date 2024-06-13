@@ -6,7 +6,7 @@ import fhdw.drivers.sensors.*;
 
 import java.io.FileNotFoundException;
 
-public class main {
+public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         ITemp tempSensor = new SerialTemperatureDriver("/dev/tty0");
@@ -23,6 +23,6 @@ public class main {
 
         System.out.println(String.format("%.2f C", weatherstation.getTemperatur()));
         System.out.println(String.format("%.2f km/h", weatherstation.getWindspeed()));
-        System.out.println("########################################## \n");
+        System.out.println();
     }
 }
