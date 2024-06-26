@@ -37,4 +37,8 @@ public class SerialTemperatureDriver implements ITemp {
     public double getTemperatureInKelvin() {
         return read();
     }
+
+    public double readTemperature() {
+        return read();
+    }
 }

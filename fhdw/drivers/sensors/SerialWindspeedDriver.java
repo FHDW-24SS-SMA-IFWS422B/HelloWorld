@@ -27,9 +27,9 @@ public class SerialWindspeedDriver implements IWind {
      * Return the current windspeed in m/s
      * @return current windspeed in m/s
      */
-    private double read() {
+    private int read() {
         Random rnd = new Random();
-        return 50 * rnd.nextDouble();
+        return 50 * rnd.nextInt();
     }
 
     @Override

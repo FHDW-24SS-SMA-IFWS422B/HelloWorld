@@ -6,4 +6,5 @@ public interface ITemp {
      * return current Temperature
      */
     double getTemperatureInKelvin();
+    double readTemperature();
 }

@@ -5,9 +5,9 @@ import obj.wetterstation.interfaces.IRain;
 import java.util.Random;
 
 public class SerialRainSensor implements IRain {
-    private double read(){
+    private int read(){
         Random rand = new Random();
-        return rand.nextDouble();
+        return rand.nextInt(10);
     }
 
     public double getSensorValue(){
