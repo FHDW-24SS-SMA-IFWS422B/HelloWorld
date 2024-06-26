@@ -1,12 +1,13 @@
 package obj;
 
-import obj.wetterstation.interfaces.IClient;
+import obj.wetterstation.WeatherStation;
 
-public class Client implements IClient{
+public class Client {
+    public static void main(String[] args) {
+        WeatherStation weatherStation = new WeatherStation();
+        ConcreteSubscriber concreteSubscriber = new ConcreteSubscriber();
 
-    @Override
-    public void newWeatherData(String data) {
-        System.out.printf("New Sensordata received: %s", data);
+        weatherStation.subscribe(concreteSubscriber);
+        weatherStation.businessLogic(); // this should trigger the update method of concreteSubscriber
     }
-    
 }
